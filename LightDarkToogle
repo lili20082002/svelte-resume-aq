@@ -1,0 +1,24 @@
+<script>
+    let darkMode = false;
+
+    function toggleDarkMode() {
+        darkMode = !darkMode;
+        document.documentElement.classList.toggle('dark', darkMode);
+    }
+</script>
+
+<button on:click={toggleDarkMode} class="p-2 rounded-md bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-200">
+    {darkMode ? 'Light Mode' : 'Dark Mode'}
+</button>
+
+<style>
+    :global(.dark) {
+        --bg-color: #333;
+        --text-color: #f9f9f9;
+    }
+
+    :global(.dark body) {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+</style>
