@@ -1,0 +1,10 @@
+<section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 pb-2 mb-4 border-b-2 border-gray-300">COMMUNITY INVOLVEMENT</h2>
+    <h3 class="text-xl font-semibold text-teal-600">Food Bank</h3>
+    <p class="text-gray-700">Volunteer Handler and Administrative Assistant</p>
+    <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+        <li>Computerization of the National Collection using Excel, proactive management of new volunteers and historical partnerships to maximize social impact.</li>
+        <li>Truck tours to retrieve fresh products close to expiration from major distribution companies, sorting, pallet preparation, and distribution to associations.</li>
+        <li>Organization and facilitation of cooking workshops in emergency accommodations.</li>
+    </ul>
+</section>
