@@ -23,5 +23,5 @@ Resume website built using Svelte and Tailwind CSS.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/lili20082002/svelte-resume.git
+   git clone https://github.com/lili20082002/svelte-resume-aq.git
    cd svelte-resume
