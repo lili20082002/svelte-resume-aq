@@ -1,0 +1,98 @@
+<script>
+    import Header from './components/Header.svelte';
+    import Experience from './components/Experience.svelte';
+    import Education from './components/Education.svelte';
+    import Skills from './components/Skills.svelte';
+    import CommunityInvolvement from './components/CommunityInvolvement.svelte';
+    import Contact from './components/Contact.svelte';
+    import LightDarkToggle from './components/LightDarkToggle.svelte';
+
+    const headerData = {
+        name: "QUEYROUX Alizée",
+        title: "Student in ESSEC Business School",
+        address: "25 rue Mouffetard, 75 005 Paris",
+        phone: "+33 7 81 88 95 78",
+        email: "alizee.queyroux@essec.edu",
+        linkedin: "https://www.linkedin.com/in/alizée-queyroux/"
+    };
+
+    const education = [
+        {
+            institution: "ESSEC Business School",
+            degree: "Programme Grande École - Master in Management",
+            location: "Cergy, France",
+            duration: "2022 - 2026",
+            details: ["GPA: 15,70", "Honors: Dean's List Member 2023", "Main Courses: Corporate Finance, Law, Accounting", "ESSEC Ambassador"]
+        },
+        {
+            institution: "Lycée du Parc",
+            degree: "Economic and Commercial Preparatory School - Scientific Option",
+            location: "Lyon, France",
+            duration: "2020 - 2022"
+        },
+        {
+            institution: "Lycée Edouard Herriot",
+            degree: '"Baccalauréat scientifique" with Highest Honors',
+            location: "Lyon, France",
+            duration: "2017 - 2020"
+        }
+    ];
+
+    const experiences = [
+        {
+            company: "Mazars",
+            role: "Audit Intern - Financial Audit",
+            location: "Paris, France",
+            duration: "Septembre 2023 - Février 2024",
+            details: [
+                "Active participation in financial audits for leading companies in various sectors including industry (RTE), banking (Natixis), insurance (Abeille Assurances), and real estate (RLF), ensuring financial and operational compliance.",
+                "Evaluation of management accounting practices, conducting substantive tests, analytical review of financial variations, and evaluation of provisions to identify anomalies and ensure the accuracy of financial statements.",
+                "Significant contribution to the improvement of internal audit processes, demonstrating an ability to optimize the efficiency and accuracy of audits through a methodical and rigorous approach.",
+                "Writing of detailed audit reports in the final phase, providing comprehensive analyses and clear recommendations to support the decision-making of financial and operational management.",
+                "Engagement in the deployment of an innovative Mazars IT tool for auditing, improving the quality of audit processes and ensuring compliance with the strict standards of the H3C."
+            ]
+        },
+        {
+            company: "Archimède Avocats & Associés",
+            role: "Intern",
+            location: "Lyon, France",
+            duration: "Juillet 2022",
+            details: [
+                "Writing of a market study on offers of legal assistance for project management for foreign investors.",
+                "Collaboration with the accountant in the administrative management of financial operations and maintaining accounting records.",
+                "Assistance in legal monitoring."
+            ]
+        },
+        {
+            company: "French Legacy",
+            role: "Intern",
+            location: "Paris, France",
+            duration: "Novembre 2022",
+            details: [
+                "Writing of a detailed benchmark analysis of artistic lines and prices practiced by competitors to strategically position Clergerie products in the market.",
+                "Contribution to the realization of the Spring-Summer collection marketing campaign."
+            ]
+        }
+    ];
+
+    const languages = [
+        { name: "French", level: "Native Language" },
+        { name: "English", level: "C1 (TOEIC: 945/990)" },
+        { name: "German", level: "B2 - C1" }
+    ];
+
+    const otherSkills = [
+        { name: "Pack Office", level: "PowerPoint, Excel, Word" },
+        { name: "Website Creation", level: "HTML, CSS" }
+    ];
+</script>
+
+<LightDarkToggle />
+<div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-8 p-8">
+    <Header {...headerData} />
+    <Education {education} />
+    <Experience {experiences} />
+    <CommunityInvolvement />
+    <Skills {languages} {otherSkills} />
+    <Contact email="alizee.queyroux@essec.edu" />
+</div>
