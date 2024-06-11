@@ -1,0 +1,22 @@
+<script>
+    export let email;
+</script>
+
+<section class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 pb-2 mb-4 border-b-2 border-gray-300">CONTACT</h2>
+    <form action={`mailto:${email}`} method="POST" class="space-y-4">
+        <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+            <input type="text" name="name" id="name" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm" required>
+        </div>
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" name="email" id="email" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm" required>
+        </div>
+        <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea name="message" id="message" rows="4" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-teal-600 text-white p-2 rounded-md">Send</button>
+    </form>
+</section>
